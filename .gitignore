@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+logos/.cache/
+tiktok_tokens.json
+publier/*.mp4
+publier/fait/*.mp4
+.venv/
+venv/
