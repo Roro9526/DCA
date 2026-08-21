@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DCA Publisher</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8f5;
+    --surface:#ffffff;
+    --text:#14181a;
+    --text-muted:#55605c;
+    --accent:#0f9d52;
+    --accent-soft:#e4f5ea;
+    --rule:#dde1d7;
+    --mono-chip:#eef1ec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0a0e13;
+      --surface:#10161c;
+      --text:#e9ece7;
+      --text-muted:#8fa098;
+      --accent:#00c853;
+      --accent-soft:rgba(0,200,83,0.14);
+      --rule:#232b26;
+      --mono-chip:#151c22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0a0e13;
+    --surface:#10161c;
+    --text:#e9ece7;
+    --text-muted:#8fa098;
+    --accent:#00c853;
+    --accent-soft:rgba(0,200,83,0.14);
+    --rule:#232b26;
+    --mono-chip:#151c22;
+  }
+  *{box-sizing:border-box;}
+  html{ background:var(--bg); }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .topbar{ height:4px; background:linear-gradient(90deg, var(--accent), transparent 85%); }
+  .wrap{ max-width:680px; margin:0 auto; padding:3.5rem 1.5rem 6rem; }
+  .eyebrow{
+    display:flex; align-items:center; gap:.6rem;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--text-muted); margin-bottom:1.4rem;
+  }
+  .eyebrow .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); flex:none;
+  }
+  h1{
+    font-family:"Manrope", ui-sans-serif, sans-serif;
+    font-weight:800; font-size:clamp(1.9rem, 4.5vw, 2.5rem);
+    line-height:1.12; letter-spacing:-.01em; margin:0 0 .6rem; text-wrap:balance;
+  }
+  .subtitle{ color:var(--text-muted); font-size:1.05rem; margin:0 0 2.6rem; max-width:52ch; }
+  .stats{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+    background:var(--rule); border:1px solid var(--rule); border-radius:10px;
+    overflow:hidden; margin-bottom:2.8rem;
+  }
+  .stat{ background:var(--surface); padding:.9rem 1rem; }
+  .stat .k{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:.06em; }
+  .stat .v{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:1rem; color:var(--accent); margin-top:.2rem; }
+  section{ margin-bottom:2.2rem; }
+  h2{
+    font-family:"Manrope", ui-sans-serif, sans-serif; font-weight:700; font-size:1.1rem;
+    margin:0 0 .2rem; padding-bottom:.5rem; border-bottom:1px solid var(--rule);
+  }
+  p{ margin:.85rem 0; max-width:62ch; }
+  p.muted{ color:var(--text-muted); font-size:.95rem; }
+  ul{ margin:.85rem 0; padding-left:1.2rem; }
+  li{ margin:.35rem 0; max-width:58ch; }
+  code{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:.86em;
+    background:var(--mono-chip); border:1px solid var(--rule);
+    padding:.1em .4em; border-radius:5px;
+  }
+  .links{ display:flex; gap:.9rem; flex-wrap:wrap; margin-top:.4rem; }
+  .links a{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:.85rem;
+    color:var(--accent); text-decoration:none; border:1px solid var(--rule);
+    padding:.5rem .8rem; border-radius:8px; background:var(--surface);
+  }
+  .links a:hover{ border-color:var(--accent); }
+  footer{
+    margin-top:3.2rem; padding-top:1.4rem; border-top:1px solid var(--rule);
+    font-size:.85rem; color:var(--text-muted);
+  }
+  footer a{ color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>Personal project</div>
+  <h1>DCA Publisher</h1>
+  <p class="subtitle">Generates dollar-cost-averaging investment simulation videos and sends them
+    as private drafts to a single TikTok account for review before posting.</p>
+
+  <div class="stats">
+    <div class="stat"><div class="k">Type</div><div class="v">Single-user tool</div></div>
+    <div class="stat"><div class="k">Posts</div><div class="v">Private drafts</div></div>
+    <div class="stat"><div class="k">Stack</div><div class="v">Python</div></div>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <ul>
+      <li>Simulates a monthly investment ("dollar-cost averaging") on a stock, crypto, or commodity
+        using public price history.</li>
+      <li>Renders the simulation as a short vertical video.</li>
+      <li>Uploads the video to the operator's own TikTok inbox via the Content Posting API
+        (<code>video.upload</code> scope) — always as a private draft, never posted automatically.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Legal</h2>
+    <p class="muted">See the <a href="./privacy.html">Privacy Policy</a> and
+      <a href="./terms.html">Terms of Service</a> for details on data handling and usage.</p>
+  </section>
+
+  <div class="links">
+    <a href="https://github.com/Roro9526/DCA">Source on GitHub</a>
+    <a href="./privacy.html">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </div>
+
+  <footer>
+    Contact: <a href="mailto:romain.lefevre@modexpo.fr">romain.lefevre@modexpo.fr</a>
+  </footer>
+</div>
+</body>
+</html>
