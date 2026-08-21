@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DCA Publisher Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8f5;
+    --surface:#ffffff;
+    --surface-2:#eef1ec;
+    --text:#14181a;
+    --text-muted:#55605c;
+    --accent:#0f9d52;
+    --accent-soft:#e4f5ea;
+    --rule:#dde1d7;
+    --mono-chip:#eef1ec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0a0e13;
+      --surface:#10161c;
+      --surface-2:#151c22;
+      --text:#e9ece7;
+      --text-muted:#8fa098;
+      --accent:#00c853;
+      --accent-soft:rgba(0,200,83,0.14);
+      --rule:#232b26;
+      --mono-chip:#151c22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0a0e13;
+    --surface:#10161c;
+    --surface-2:#151c22;
+    --text:#e9ece7;
+    --text-muted:#8fa098;
+    --accent:#00c853;
+    --accent-soft:rgba(0,200,83,0.14);
+    --rule:#232b26;
+    --mono-chip:#151c22;
+  }
+
+  *{box-sizing:border-box;}
+  html{ background:var(--bg); }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .topbar{
+    height:4px;
+    background:linear-gradient(90deg, var(--accent), transparent 85%);
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:3.5rem 1.5rem 6rem;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    margin-bottom:1.4rem;
+  }
+  .eyebrow .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 0 3px var(--accent-soft);
+    flex:none;
+  }
+  h1{
+    font-family:"Manrope", ui-sans-serif, sans-serif;
+    font-weight:800;
+    font-size:clamp(1.9rem, 4.5vw, 2.5rem);
+    line-height:1.12;
+    letter-spacing:-.01em;
+    margin:0 0 .5rem;
+    text-wrap:balance;
+  }
+  .subtitle{
+    color:var(--text-muted);
+    font-size:1rem;
+    margin:0 0 2.6rem;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem .9rem;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.76rem;
+    color:var(--text-muted);
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:.7rem .9rem;
+    margin-bottom:2.8rem;
+  }
+  .meta b{ color:var(--text); font-weight:600; }
+
+  section{ margin-bottom:2.4rem; }
+  h2{
+    font-family:"Manrope", ui-sans-serif, sans-serif;
+    font-weight:700;
+    font-size:1.15rem;
+    letter-spacing:-.005em;
+    margin:0 0 .2rem;
+    padding-bottom:.55rem;
+    border-bottom:1px solid var(--rule);
+  }
+  h2 .num{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    color:var(--accent);
+    font-weight:500;
+    margin-right:.55rem;
+    font-size:.95rem;
+  }
+  p{ margin:.85rem 0; color:var(--text); max-width:64ch; }
+  p.muted{ color:var(--text-muted); font-size:.95rem; }
+  ul{ margin:.85rem 0; padding-left:1.2rem; }
+  li{ margin:.4rem 0; max-width:60ch; }
+  code, .tok{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.86em;
+    background:var(--mono-chip);
+    border:1px solid var(--rule);
+    padding:.1em .4em;
+    border-radius:5px;
+    color:var(--text);
+  }
+  a{ color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid color-mix(in srgb, var(--accent) 35%, var(--rule));
+    border-radius:10px;
+    padding:1rem 1.1rem;
+    font-size:.92rem;
+    color:var(--text);
+  }
+  .callout b{ color:var(--accent); }
+
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.4rem;
+    border-top:1px solid var(--rule);
+    font-size:.85rem;
+    color:var(--text-muted);
+  }
+  footer a{ color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>DCA Publisher · Document</div>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">What DCA Publisher does with data, in plain terms.</p>
+
+  <div class="meta">
+    <span>Effective: <b>2026-08-21</b></span>
+    <span>Scope: <b>single-user personal tool</b></span>
+    <span>Contact: <b>romain.lefevre@modexpo.fr</b></span>
+  </div>
+
+  <div class="callout">
+    <b>Short version:</b> DCA Publisher is a personal, single-operator tool. It generates investment-simulation
+    videos on the operator's own computer and uploads them as private drafts to the operator's own TikTok
+    account. It does not collect, sell, or share data about anyone else.
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>What this is</h2>
+    <p>
+      DCA Publisher is a personal project built and operated by a single individual. It renders short videos
+      illustrating dollar-cost-averaging investment simulations from public market data, then uses TikTok's
+      Content Posting API to send those videos as private drafts to the operator's own TikTok account for
+      manual review and publishing.
+    </p>
+    <p class="muted">
+      It is not a public service, does not have a website users sign up on, and is not distributed to other
+      people. The only TikTok account it connects to is the operator's own.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Data this tool touches</h2>
+    <ul>
+      <li><b>TikTok access &amp; refresh tokens</b> — issued by TikTok when the operator authorizes the app,
+        stored only in a local file on the operator's own computer (<code>tiktok_tokens.json</code>), never
+        transmitted anywhere except back to TikTok's API.</li>
+      <li><b>Market price data</b> — public price history (from Yahoo Finance or local files), used only to
+        draw the chart in the generated video.</li>
+      <li><b>The rendered video file itself</b> — stored locally, uploaded only to the operator's own TikTok
+        drafts.</li>
+    </ul>
+    <p>No other personal data is collected. There is no analytics, no tracking pixel, no cookie, and no
+      database of users — because there is exactly one user: the operator.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Data sharing</h2>
+    <p>
+      Nothing is sold or shared with third parties. The only external service this tool talks to is TikTok's
+      own Content Posting API, strictly to deliver the video the operator generated to the operator's own
+      account.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Retention &amp; deletion</h2>
+    <p>
+      TikTok tokens are kept locally until revoked. The operator can remove access at any time either by
+      deleting the local token file or by revoking the app's permission from within TikTok's own account
+      settings. Revoking access does not affect videos already delivered.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Changes to this policy</h2>
+    <p class="muted">
+      This page may be updated as the tool changes. Since there is a single operator and no mailing list,
+      changes are simply reflected here with an updated effective date.
+    </p>
+  </section>
+
+  <footer>
+    Questions about this policy: <a href="mailto:romain.lefevre@modexpo.fr">romain.lefevre@modexpo.fr</a>
+  </footer>
+</div>
+</body>
+</html>

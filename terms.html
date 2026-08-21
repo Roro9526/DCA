@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DCA Publisher Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f8f5;
+    --surface:#ffffff;
+    --surface-2:#eef1ec;
+    --text:#14181a;
+    --text-muted:#55605c;
+    --accent:#0f9d52;
+    --accent-soft:#e4f5ea;
+    --rule:#dde1d7;
+    --mono-chip:#eef1ec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0a0e13;
+      --surface:#10161c;
+      --surface-2:#151c22;
+      --text:#e9ece7;
+      --text-muted:#8fa098;
+      --accent:#00c853;
+      --accent-soft:rgba(0,200,83,0.14);
+      --rule:#232b26;
+      --mono-chip:#151c22;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#0a0e13;
+    --surface:#10161c;
+    --surface-2:#151c22;
+    --text:#e9ece7;
+    --text-muted:#8fa098;
+    --accent:#00c853;
+    --accent-soft:rgba(0,200,83,0.14);
+    --rule:#232b26;
+    --mono-chip:#151c22;
+  }
+
+  *{box-sizing:border-box;}
+  html{ background:var(--bg); }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .topbar{
+    height:4px;
+    background:linear-gradient(90deg, var(--accent), transparent 85%);
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:3.5rem 1.5rem 6rem;
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.78rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    margin-bottom:1.4rem;
+  }
+  .eyebrow .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--accent);
+    box-shadow:0 0 0 3px var(--accent-soft);
+    flex:none;
+  }
+  h1{
+    font-family:"Manrope", ui-sans-serif, sans-serif;
+    font-weight:800;
+    font-size:clamp(1.9rem, 4.5vw, 2.5rem);
+    line-height:1.12;
+    letter-spacing:-.01em;
+    margin:0 0 .5rem;
+    text-wrap:balance;
+  }
+  .subtitle{
+    color:var(--text-muted);
+    font-size:1rem;
+    margin:0 0 2.6rem;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem .9rem;
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.76rem;
+    color:var(--text-muted);
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:8px;
+    padding:.7rem .9rem;
+    margin-bottom:2.8rem;
+  }
+  .meta b{ color:var(--text); font-weight:600; }
+
+  section{ margin-bottom:2.4rem; }
+  h2{
+    font-family:"Manrope", ui-sans-serif, sans-serif;
+    font-weight:700;
+    font-size:1.15rem;
+    letter-spacing:-.005em;
+    margin:0 0 .2rem;
+    padding-bottom:.55rem;
+    border-bottom:1px solid var(--rule);
+  }
+  h2 .num{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    color:var(--accent);
+    font-weight:500;
+    margin-right:.55rem;
+    font-size:.95rem;
+  }
+  p{ margin:.85rem 0; color:var(--text); max-width:64ch; }
+  p.muted{ color:var(--text-muted); font-size:.95rem; }
+  ul{ margin:.85rem 0; padding-left:1.2rem; }
+  li{ margin:.4rem 0; max-width:60ch; }
+  code, .tok{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    font-size:.86em;
+    background:var(--mono-chip);
+    border:1px solid var(--rule);
+    padding:.1em .4em;
+    border-radius:5px;
+    color:var(--text);
+  }
+  a{ color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  .callout{
+    background:var(--accent-soft);
+    border:1px solid color-mix(in srgb, var(--accent) 35%, var(--rule));
+    border-radius:10px;
+    padding:1rem 1.1rem;
+    font-size:.92rem;
+    color:var(--text);
+  }
+  .callout b{ color:var(--accent); }
+
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.4rem;
+    border-top:1px solid var(--rule);
+    font-size:.85rem;
+    color:var(--text-muted);
+  }
+  footer a{ color:var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>DCA Publisher · Document</div>
+  <h1>Terms of Service</h1>
+  <p class="subtitle">The rules for using DCA Publisher, kept short because there's one user.</p>
+
+  <div class="meta">
+    <span>Effective: <b>2026-08-21</b></span>
+    <span>Scope: <b>single-user personal tool</b></span>
+    <span>Contact: <b>romain.lefevre@modexpo.fr</b></span>
+  </div>
+
+  <div class="callout">
+    <b>Short version:</b> DCA Publisher is operated by one person, for that person's own use, to post
+    investment-simulation videos to their own TikTok account as private drafts. It comes with no warranty
+    and no support commitment beyond the operator's own use of it.
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Who this covers</h2>
+    <p>
+      DCA Publisher is a personal tool built and run by a single operator. It is not offered to the public,
+      does not accept sign-ups, and these terms exist only to satisfy TikTok's app-registration requirement
+      that every app declare its terms.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>What the tool does</h2>
+    <ul>
+      <li>Renders investment-simulation ("dollar-cost averaging") videos from market price data.</li>
+      <li>Connects to TikTok's Content Posting API, using the <code>video.upload</code> scope, to send those
+        videos as <b>private drafts</b> to the operator's own TikTok account.</li>
+      <li>Never posts publicly on its own — every video still requires the operator to open TikTok and
+        manually finish and publish it.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Acceptable use</h2>
+    <p>
+      The tool is used solely by its operator, on the operator's own TikTok account, for content the
+      operator created. It is not used to post on behalf of anyone else, to spam, or to distribute content
+      that violates TikTok's own Community Guidelines — those still apply to whatever gets published from
+      the drafts this tool creates.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>No warranty</h2>
+    <p class="muted">
+      This is a personal side project, provided as-is, with no uptime guarantee and no warranty of any
+      kind. Investment-simulation videos are illustrative only and are not financial advice.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Changes to these terms</h2>
+    <p class="muted">
+      These terms may be updated as the tool evolves. The effective date above reflects the latest
+      revision.
+    </p>
+  </section>
+
+  <footer>
+    Questions about these terms: <a href="mailto:romain.lefevre@modexpo.fr">romain.lefevre@modexpo.fr</a>
+  </footer>
+</div>
+</body>
+</html>
